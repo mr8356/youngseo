@@ -36,7 +36,12 @@ int main() {
     clock_t start, end;
     double cpu_time_used;
 
-
+    // Measure time for fibo
+    start = clock();
+    int fiboResult = fibonacci(n);
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("(fibonacci): %d, Time: %f seconds\n", fiboResult, cpu_time_used);
 
     // Measure time for fiboTopDown
     start = clock();
