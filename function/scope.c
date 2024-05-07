@@ -1,0 +1,19 @@
+#include <stdio.h>
+void f(void);
+int i;
+
+int main(void)
+{
+    for (i = 0; i < 5; i++)
+    {
+        f();
+    }
+    return 0;
+}
+
+void f(void)
+{
+    int i = 0;
+    for (i = 0; i < 10; i++)
+        printf("#");
+}
