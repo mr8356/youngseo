@@ -6,7 +6,7 @@ int main(void)
 {
     for (i = 0; i < 5; i++)
     {
-        f();
+        x = f();
     }
     return 0;
 }
